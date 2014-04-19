@@ -3,6 +3,7 @@ layout: default
 title: VIM
 ---
 ##  Move
+
 | Command       | Action        |
 | ------------- |-------------- |
 | col 3 is      | right-aligned |
