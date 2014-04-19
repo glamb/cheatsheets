@@ -3,12 +3,12 @@ layout: default
 title: VIM
 ---
 ##  Move
-| Command       | Action        |
-| ------------- |--------------:|
-| col 3 is      | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
 
-## Inserting
-## Deleting
-## Changing Text
+## Insert
+## Delet
+## Change
