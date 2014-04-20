@@ -2,7 +2,10 @@
 layout: default
 title: VIM
 ---
+
 # {{ page.title }}
+
+---
 
 ## Cursor movement
 
