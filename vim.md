@@ -2,6 +2,8 @@
 layout: default
 title: VIM
 ---
+# {{ page.title }}
+
 ## Cursor movement
 
 `h` - move left
