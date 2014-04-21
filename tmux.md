@@ -5,6 +5,8 @@ title: tmux
 
 # {{ page.title }}
 
+---
+
 ## Start
 
 `tmux` - start new
