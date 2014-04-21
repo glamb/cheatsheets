@@ -1,4 +1,8 @@
 ---
-layout: defualt
+layout: default
 title: PostgreSQL
+---
+
+# {{ page.title }}
+
 ---
