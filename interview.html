@@ -31,7 +31,7 @@
       <div class="input-group">
         <input class="form-control" type="email" required placeholder="E-mail address" />
         <span class="input-group-btn">
-          <button class="btn btn-default" id="save" type="button">Go!</button>
+          <button class="btn btn-default" id="save" type="submit">Go!</button>
         </span>
       </div>
     </form>
@@ -54,9 +54,8 @@ $(document).ready(function() {
     setTimeout(function() {
       $('#register-container').removeClass('hidden');
       $('#register-now').addClass('hidden');
-    }, 500);
+    }, 2000);
   });
-
   $("form").submit(function(event) {
     $(this).addClass('hidden');
     $('#saving').removeClass('hidden');
