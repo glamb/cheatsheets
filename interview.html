@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Register yo'self</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style type="text/css">
+    body,html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #register-container {
+      width: 80%;
+      max-width: 500px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <a class="btn btn-success btn-lg" id="register-now" href="javascript:;">Click to register</a>
+
+    <form class="hidden" id="register-container">
+      <div class="input-group">
+        <input class="form-control" type="email" required placeholder="E-mail address" />
+        <span class="input-group-btn">
+          <button class="btn btn-default" id="save" type="button">Go!</button>
+        </span>
+      </div>
+    </form>
+
+    <div class="hidden muted" id="saving">
+      We're saving that for you this instant.
+    </div>
+
+    <div class="hidden alert alert-success" id="saved">
+      <strong>So cool</strong>.
+      You're registered for the great event. Now go.
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#register-now').click(function() {
+    $(this).addClass('disabled').removeClass('btn-success').text('Loading...');
+    setTimeout(function() {
+      $('#register-container').removeClass('hidden');
+      $('#register-now').addClass('hidden');
+    }, 500);
+  });
+
+  $("form").submit(function(event) {
+    $(this).addClass('hidden');
+    $('#saving').removeClass('hidden');
+
+    setTimeout(function() {
+      $('#saving').addClass('hidden');
+      $('#saved').removeClass('hidden');
+    }, 1200);
+
+    event.preventDefault();
+    return false;
+  });
+});
+</script>
+</body>
+</html>
